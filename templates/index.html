@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
+
+            <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Diabetes Test</title>
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Diabetes Prediction Test</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/test">Test <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+  </nav>
+
+
+
+  <div class="container">
+    <h1 class="display-1 text-center my-4">Diabetes Detection</h1>
+    <hr>
+      <form action="/test" method="POST">
+
+         <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+         <strong>Note</strong> The following test is to predict if you have diabetes or not.
+         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+        </div>
+
+        <div class="form-group mt-5">
+          <label for="Preg"><h4>No. of Pregnancies: </h4></label>
+          <input type="text" class="form-control form-control-lg" id="Preg" name="Preg" placeholder="Enter No. of Pregnancies (eg. 0 ~ 17)">
+        </div>
+
+        <div class="form-group">
+          <label for="GLU"><h4>Glucose Level: </h4></label>
+          <input type="text" class="form-control form-control-lg" id="GLU" name="GLU" placeholder="Enter Glucose Level (eg. 50 ~ 200)">
+        </div>
+
+                        <div class="form-group">
+          <label for="BP"><h4>Blood Pressure: </h4></label>
+          <input type="text" class="form-control form-control-lg" id="BP" name="BP" placeholder="Enter Your Blood Pressure (eg. 50 ~ 120)">
+        </div>
+
+                                <div class="form-group">
+          <label for="ST"><h4>Skin Thickness: </h4></label>
+          <input type="text" class="form-control form-control-lg" id="ST" name="ST" placeholder="Enter Your Skin Thickness (eg. 20 ~ 90)">
+        </div>
+
+        <div class="form-group">
+          <label for="INS"><h4>Insulin Level: </h4></label>
+          <input type="text" class="form-control form-control-lg" id="INS" name="INS" placeholder="Enter Insulin Level (eg. 30 ~ 850)">
+        </div>
+
+        <div class="form-group">
+          <label for="BMI"><h4>Body Mass Index(BMI): </h4></label>
+          <input type="text" class="form-control form-control-lg" id="BMI" name="BMI" placeholder="Enter BMI (eg. 20 ~ 70)">
+        </div>
+
+         <div class="form-group">
+          <label for="DPF"><h4>Diabetes Pedigree Function: </h4></label>
+          <input type="text" class="form-control form-control-lg" id="DPF" name="DPF" placeholder="Enter Your Diabetes Pedigree Function (eg. 0.078 ~ 2.42)">
+        </div>
+
+        <div class="form-group">
+          <label for="Age"><h4>Age: </h4></label>
+          <input type="text" class="form-control form-control-lg" id="Age" name="Age" placeholder="Enter Your Age (eg. 21 ~ 81)">
+        </div>
+
+
+
+        <button class="btn btn-primary btn-lg my-4" type="submit">Submit</button>
+
+    </form>
+  </div>
+
+    <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+    <strong>Important</strong> This test is not 100% accurate and you should have a medical diagnosis if necessary.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <hr>
+  <!-- FOOTER -->
+  <footer class="container">
+    <p>&copy; 2022-2023 All rights reserved.</p>
+  </footer>
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

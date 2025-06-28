@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
+
+            <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Diabetes Test</title>
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Diabetes test</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/test">Test</a>
+      </li>
+    </ul>
+  </div>
+  </nav>
+  
+  <div class="container">
+  <div class="card my-5">
+    <div class="card-header">
+      <h3>What is Diabetes?</h3>
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p>Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. 
+            Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, 
+            helps glucose from food get into your cells to be used for energy.</p>
+      </blockquote>
+    </div>
+  </div>
+
+  <div class="card my-5">
+    <div class="card-header">
+      <h3>It's Types</h3>
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p>Three major diabetes types can develop: Type 1, type 2, gestational and prediabetes diabetes.</p>
+      </blockquote>
+
+      <div class="card my-2">
+        <div class="card-body">
+            <strong>Type I diabetes:</strong> Also known as juvenile diabetes, this type occurs when the body fails to produce insulin. 
+            People with type I diabetes are insulin-dependent, which means they must take artificial insulin daily to stay alive.
+        </div>
+      </div>
+
+      <div class="card my-2">
+        <div class="card-body">
+            <strong>Type 2 diabetes:</strong> Type 2 diabetes affects the way the body uses insulin. 
+            While the body still makes insulin, unlike in type I, the cells in the body do not respond to it as effectively as they once did.
+        </div>
+      </div>
+
+      <div class="card my-2">
+        <div class="card-body">
+            <strong>Gestational diabetes:</strong> This type occurs in women during pregnancy when the body can become less sensitive to insulin. 
+            Gestational diabetes does not occur in all women and usually resolves after giving birth.
+        </div>
+      </div>
+
+      <div class="card my-2">
+        <div class="card-body">
+            <strong>Prediabetes:</strong> It occurs when your blood sugar is higher than normal, but it’s not high enough for a diagnosis of type 2 diabetes.
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <div class="card my-5">
+        <div class="card-header">
+          <h3>Symptoms</h3>
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>The general symptoms of diabetes include:</p>
+          </blockquote>
+
+          <div class="card">
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">increased hunger</li>
+                    <li class="list-group-item">increased thirst</li>
+                    <li class="list-group-item">weight loss</li>
+                    <li class="list-group-item">blurry vision</li>
+                    <li class="list-group-item">extreme fatigue</li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card my-5">
+        <div class="card-header">
+          <h3>Prevention</h3>
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>Type 1 diabetes isn’t preventable because it’s caused by a problem with the immune system.</p>
+            <p>But here are a few things you can do to delay other types of diabetes:</p>
+          </blockquote>
+
+          <div class="card">
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">Get at least 150 minutes per week of aerobic exercise, such as walking or cycling.</li>
+                    <li class="list-group-item">Cut saturated and trans fats, along with refined carbohydrates, out of your diet.</li>
+                    <li class="list-group-item">Eat more fruits, vegetables, and whole grains.</li>
+                    <li class="list-group-item">Eat smaller portions.</li>
+                    <li class="list-group-item">Try to lose 7 percent Trusted Source of your body weight if you’re overweight or obese.</li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card my-5">
+        <div class="card-header">
+          <h2>Diabetes Test</h2>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Want to take <strong>Diabetes Test</strong>:</h5>
+          <p class="card-text">Take test to know whether you are fit or not?</p>
+          <a href="/test" class="btn btn-primary">Take Test</a>
+        </div>
+      </div>
+
+  </div>
+
+
+  <hr>
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy;  2022-2023 All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
